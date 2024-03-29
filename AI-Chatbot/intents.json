@@ -1,0 +1,70 @@
+{"intents": [
+  {"tag": "greetings",
+  "patterns": ["hello","hey","hi","Howdy","Hello, college bot","Hey","Hi, can you help me?","Hello, I have some questions","Hi, I'm a prospective student","good day","Greetings","what's up?","how is it going?","hii","hii there","goodmorning","good afternoon","goodevening"],
+  "responses": ["Hello!","Hey!","What can I do for you?","Hello! Welcome to R.V College of Engineering. How can I assist you today?","Hi there! How can I help you with your college-related queries?","Good day! How may I assist you with your college inquiries?","Greetings! Feel free to ask me anything about R.V College of Engineering.","Hello! I'm here to answer your questions about R.V College of Engineering.","Hi! I'm the Alice. What can I do for you?"]
+  },
+
+  {"tag": "name",
+  "patterns": ["what is your name","name","what's your name","who are you","what should I call you","hey who are you"],
+  "responses": ["You can call me Alice","I'm Alice","I'm Alice your virtual assistant"]
+  },
+
+  {"tag": "College info",
+  "patterns": ["Tell me about the college","What is this college known for?","Give me some information about the college","What programs does the college offer?"],
+  "responses": ["RV College of Engineering, Bangalore, founded in 1946, is a prestigious institution known for academic excellence, industry collaborations, and a rich legacy of producing successful engineers and leaders."]
+  },
+
+  {"tag": "registration",
+  "patterns": ["How can I register for courses?","Tell me about the registration process","Is there an online registration system?","When does the registration period start?","Can you guide me through the admission process?","I want to apply for admission, what should I do?", "Give me details about the registration fees"],
+  "responses": ["The registration process typically involves...","You can register for courses through our online portal.","Admission details and registration procedures can be found on our website.","The registration period usually starts at [specified time].","To apply for admission, visit our official website and follow the outlined steps.","For information on registration fees, please refer to the fees section on our website."]
+  },
+  
+  {"tag": "fest",
+  "patterns": ["Tell me about upcoming college events","What festivals are celebrated at the college?","Give me details about the annual fest","How can I participate in college events?","Is there a cultural fest?","Tell me about sports events on campus"],
+  "responses": ["We host a variety of events throughout the year. Check our events calendar for details.","Our college celebrates festivals like [list of festivals].","The annual fest is a grand event featuring [details]. Stay tuned for updates on the next fest.","To participate in college events, you can join various clubs and societies on campus.","Yes, we have a cultural fest that showcases talents in music, dance, and arts.","Sports events are an integral part of our calendar. You can join sports clubs or teams for participation."]
+  },
+
+
+  {"tag": "contact info",
+  "patterns": ["How can I contact the college?","What's the college's phone number?","What's the email address for admissions?","Where is the college located?","Give me the contact information","I need to get in touch with the college"],
+  "responses": ["You can contact the college at +91-80-26622130-35.","The college's email address for admissions is info@rvce.edu.in.","The college is located near Mysore Road, Bangalore - 560 059 Karnataka, India.","For more information, you can visit the college's website at https://www.rvce.edu.in/."]
+  },
+
+
+   {"tag": "Location",
+  "patterns": ["location","where is it located","Where is the college located?","Tell me about the college's location","What is the address of the college?","Can you provide directions to the college?","Where can I find the campus?","Give me information about the college's whereabouts","How do I reach the college?","what is the location of the college","Where is college?","Where to visit college","Where is the college building","clg location","what way is college"],
+  "responses": ["R.V College of Engineering is Located near Mysore Road,Pattanagere Bangalore - 560 059 Karnataka, India."]
+  },
+
+
+  {"tag": "goodbye",
+  "patterns": ["cya","See you later","Goodbye","I am leaving","Take care","Have a great day","Adios","Goodbye, college bot","Until next time","Goodbye and thank you","So long","Goodbye for now","Have a Good Day","bye","see ya","goodnight","byee","see ya soon","i will talk to you later","shut up"],
+  "responses": ["Hope we meet soon in College","Talk you later","Goodbye","Goodbye! If you have more questions in the future, feel free to return.","Farewell! If you need assistance later on, don't hesitate to reach out.","See you later! Have a wonderful day.","Bye! Take care and stay curious.","Goodbye, and have a great day ahead!","Until next time! If you have any more inquiries, don't hesitate to ask.","Adios! If you ever need information, I'll be here.","So long! Feel free to return if you have more queries in the future."]
+  },
+
+  {"tag": "invalid",
+    "patterns": ["","gvsd","asbhk","I love  you","Give me money","wihgrhagjrjgkjih","anything","tell me something","oh admit me in clg", "I'm lost here","I have no idea what to ask","This doesn't seem right","Could you be more clear?","I'm not getting it","What's going on?","I'm drawing a blank","I'm in the dark","This is confusing","I'm at a loss","This isn't working","I'm puzzled","I'm at a dead end","What's the point of this?","I'm stuck here","I'm confused","This doesn't make sense","What are you talking about?","I need help!","Invalid command","Not sure what to ask","I don't know","Please assist me","Can you explain?","I'm lost","It's not clear","I'm stuck","This is gibberish","I'm unsure","I'm baffled"],
+    "responses": ["Sorry, can't understand you", "Not sure I understand","I'm sorry, I didn't understand your question. Please try asking in a different way or provide more details.","Apologies, but I couldn't comprehend your question. Could you rephrase it or be more specific?","I'm here to help, but I'm not sure what you're asking. Can you clarify or ask another question?"]
+  },
+
+  {"tag": "thanks",
+    "patterns": ["Thanks", "Thank you","how are you", "That's helpful","Appreciate it","You're helpful","Thanks a lot","I'm grateful","Much appreciated", "Thank you for your help","Thanks for the information","I appreciate your assistance" ,"Awesome, thanks", "Thanks for helping me","you are so kind","I thank u"],
+    "responses": ["Happy to help!", "Any time!","Fine, thanks what about you" ,"My pleasure","You're welcome! If you have any more questions, feel free to ask.","You're very welcome! If you need further assistance, don't hesitate to reach out.","No problem at all! If you have more queries in the future, don't hesitate to ask.","It was my pleasure assisting you! If you ever have more questions, just let me know.","You're welcome! I'm here to help. If you need more information, feel free to ask."]
+  },
+
+  {"tag": "others",
+    "patterns": ["I have another question","I have another question","Ask something else","Can you help with something different?","I need information on a different topic","What else can you assist me with?","I have a general query","Not sure where to ask this, but...","Any other information you can provide?","I'm curious about something else","Tell me more about campus life","Can you recommend extracurricular activities?","What's the history of the college?","Do you have any tips for new students?","Tell me about student support services","I'm interested in scholarships","Can you provide information on alumni networks?","What's the college's mission statement?","Tell me about career services","I want to know about research opportunities","What's the campus like?","Can you share success stories of alumni?","Tell me about the college's achievements","I'd like to know about study abroad programs","Do you offer online courses?","Can you explain the grading system?","Tell me about campus facilities","I'm interested in campus security","Can you provide info on international students?","Tell me about the college's values and ethos","Ask something else","Can you help with something different?","I need information on a different topic","What else can you assist me with?","I have a general query","Not sure where to ask this, but...","Any other information you can provide?"],
+    "responses": ["Of course! Please go ahead and ask your question, and I'll do my best to assist you.","Certainly! Feel free to ask any other questions you have in mind, and I'll be happy to help.","Sure, I'm here to assist you. What else would you like to know?","I'm here to provide information on a wide range of topics. What else can I assist you with today?"]
+  },
+  
+  {"tag": "Fallback",
+    "patterns": ["This doesn't make sense","What are you talking about?","I need help!","Invalid command","Not sure what to ask","I don't know","Please assist me","Can you explain?","I'm lost","It's not clear","I'm stuck","This is gibberish","I'm unsure","I'm baffled","whatever","what","come again","please you are dumb","fool","shutup","colleg life","can i get money"],
+    "responses": ["I'm sorry, I didn't understand your question. Please try asking in a different way or provide more details.","Apologies, but I couldn't comprehend your query. Could you rephrase it or be more specific?","I'm here to help, but I'm not sure what you're asking. Can you clarify or ask another question?"]
+  },
+
+  {"tag": "Ovhay",
+    "patterns": ["I am ovhay","ovhay","ovhay kumar"],
+    "responses": ["Hello, Ovhay Kumar aka the God of valorant, how is your day today"]
+  }
+
+]}
