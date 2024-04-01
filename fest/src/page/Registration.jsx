@@ -176,7 +176,7 @@ function Registration() {
                     </div>
                 </form>
                 </div>
-                <div className=" ">
+                <div className=" my-80">
                     <Chat/>
                 </div>
             </div>
