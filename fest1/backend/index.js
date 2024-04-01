@@ -115,6 +115,37 @@ app.put('/Event/:Ename', (req, res) => {
     });
 });
 
+app.put('/Sponsorship/:Cname',(req,res)=>{
+    const companyName=req.params.Cname
+    const updatedSponsorship=req.body
+    const sql =  `UPDATE Sponsorship SET Cname=?, Funds=? WHERE Cname=?`
+    const values= [updatedSponsorship.Cname, updatedSponsorship.Funds, companyName]
+    db.query(sql,values,(error,result)=>{
+        if(error){
+            console.error('error updating Sponsorship:',error)
+            return res.status(500).json({error:'Error updating Sponsorship'})
+        }
+        console.log('Sponsorship updated succesfully!')
+        res.json({status:'success'})
+    })
+})
+
+app.put('/Organizes/:Id',(req,res)=>{
+    const Id=req.params.Id
+    const updatedOrganizes=req.body
+    const sql =  `UPDATE Organizes SET Id=?, ContactNumber=?, Oname=?, Tname=?, Ename=? WHERE Id=?`
+    const values= [updatedOrganizes.Id, updatedOrganizes.ContactNumber, updatedOrganizes.Oname, updatedOrganizes.Tname, updatedOrganizes.Ename, Id]
+    db.query(sql,values,(error,result)=>{
+        if(error){
+            console.error('error updating Organizes:',error)
+            return res.status(500).json({error:'Error updating Organizes'})
+        }
+        console.log('Organizes updated succesfully!')
+        res.json({status:'success'})
+    })
+})
+
+
 mongoose.connect('mongodb://127.0.0.1:27017/feedback', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
