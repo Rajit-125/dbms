@@ -64,7 +64,18 @@ app.get("/participant", (req, res) => {
     // console.log("team head successfully signed in")
 })
 
-
+app.get("/report/:Ename", (req, res) => {
+    const eventName = req.params.Ename;
+    db.query("SELECT usn, email, name FROM participant WHERE Ename = ?", [eventName], (err, result) => {
+      if (err) {
+        console.log(err);
+        res.status(500).send("An error occurred while fetching data.");
+      } else {
+        res.send(result);
+      }
+    });
+  });
+  
 app.get("/Event", (req, res) => {
     db.query("select * from Event,EventLocation where Event.Ename=EventLocation.Ename", (err, result) => {
         if (err) {

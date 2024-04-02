@@ -69,7 +69,7 @@ class Chat extends Component {
             type="text"
             value={this.state.newMessage}
             onChange={this.handleChange}
-            //placeholder="Type a message..."
+            placeholder=" Chat here..."
           />
           <button onClick={this.handleSend} className=" my-1 text-white bg-blue-400 rounded-2xl w-32 hover:text-black">Send</button>
         </div>

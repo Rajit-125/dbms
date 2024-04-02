@@ -6,6 +6,8 @@ import Registration from "../page/Registration";
 import Information from "../page/Information";
 import Feedback from "../page/Feedback";
 import Chat from "../page/Chatbox";
+import Report from "../page/report";
+import GetRepo from "../page/Get";
 
 
 
@@ -30,6 +32,14 @@ const router=createBrowserRouter(
         {
             path:"/chat",
             element:<Chat/>
+        },
+        {
+            path:"/report",
+            element:<Report/>
+        },
+        {
+            path:"/get",
+            element:<GetRepo/>
         },
     ],
 )
